@@ -1,5 +1,5 @@
 import $ from "jquery";
-import jQuery from "jquery";
+// import jQuery from "jquery";
 
 function isCounterElementVisible($element) {
     var topView = $(window).scrollTop();

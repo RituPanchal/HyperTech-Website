@@ -5,7 +5,7 @@ import '../Navigation/js/navbar';
 
 const NavBarComponent = () => {
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark">
+        <nav className="navbar sticky-top navbar-expand-lg navbar-dark">
             <a className="navbar-brand" href="/home">
                 HYPERTECH
                 {/* <img className="img-size" src="./Lib/images/hypertec_logo.png" />  */}

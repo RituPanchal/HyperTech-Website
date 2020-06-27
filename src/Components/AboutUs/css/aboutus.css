@@ -1,0 +1,318 @@
+.about-head-01{
+    position: relative;
+    top: -480px;
+    background-image: url(/static/media/aboutMain.a71adf3a.jpg);
+    height: 370px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    animation: .6s .8s forwards appear;
+    /* animation: appear 1s; */
+    animation-delay: 1s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+ 
+@-webkit-keyframes appear {
+    0% { height: 0px; visibility: hidden;}
+    100% { height: 45vh; visibility: visible;}  
+}
+ 
+@keyframes appear {
+    0% { top: -280px; height: 0px; visibility: hidden;}
+    100% { top: 0px; height: 370px; visibility: visible;}   
+}
+
+.about-container {
+    position: absolute;
+    animation: appearDown 1s;
+    animation-delay: 1s;
+    top: -0px;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    /* visibility: visible; */
+}   
+
+@keyframes appearDown {
+    0% { position: relative;}
+    100% { position: relative; }   
+} 
+
+.about-02 {
+    height: 485px;
+    width: 100%;
+    background-color: black;
+    padding: 40px 0 40px 0;
+    display: flex;
+    background: #090909;
+}
+.about-no-2-cont {
+    margin-left: 25%;
+    position: relative;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+}
+.about-no-2-cont:after {
+    content: '';
+    bottom: 0;
+    position: absolute;
+    width: 90%;
+    height: 100%;
+    background-image: linear-gradient(to right,transparent,#090909);
+}
+
+.about-no-2 {
+    font-size: 220px;
+    color: #ccc;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    display: block;
+    margin-top: 80px;
+    margin-right: 50px;
+    width: 130px;
+}
+
+.about-copy {
+    margin-right: 30%;
+}
+
+.about-heading {
+    color: #f7c512;
+    font-size: 2.6rem;
+}
+
+.about-sub-head {
+    margin: 40px 0;
+    font-size: 3.4rem;
+    width: 602px;
+}
+
+.line {
+    height: 4px;
+    background: #f7c512;
+    width: 100%;
+    margin: 15px 0;
+}
+
+.about-para {
+    letter-spacing: .3px;
+    line-height: 1.25;
+    width: 640px;
+}
+
+.about-03 {
+    position: relative;
+    height: 690px;
+    background-color: #1e1e1e;
+    /* padding: 20px 0 20px 0; */
+}
+
+.about-03-cont{
+    margin: 60px auto;
+    padding: 125px 0 40px;
+    display: flex;
+    position: relative;
+    width: 90%;
+}
+.factoryImage{
+    overflow: hidden;
+    width: 980px;
+    -webkit-transform: translateX(-2.5vw);
+    transform: translateX(-2.5vw);
+    z-index: 1;
+}
+.factoryImg{
+    background : url('../../../Lib/images/factory-image.jpg');
+    height: 525px;
+    width: 450px;
+}
+.whiteBlockContainer{
+    position: relative;
+    margin-bottom: 100px;
+}
+.whiteBlockContainer:after{
+    content: '';
+    width: 90vw;
+    background: #fff;
+    height: calc(100% + 100px);
+    position: absolute;
+    top: -50px;
+    margin-left: -5px;
+    left: 50vw;
+    -webkit-transform: translateX(-88.5%);
+    transform: translateX(-88.5%);
+    border-bottom: 20px solid #f7c512;
+}
+.about-section{
+    position: relative;
+    z-index: 1;
+    color: #000;
+    font-size: 2.1rem;
+    margin-left: 15px;
+    margin-right: 10%;
+}
+.additionalCopy{
+    width: 58%;
+    padding-left: 15px;
+}
+.additionalCopy p{
+    letter-spacing: .3px;
+    line-height: 1.25;
+}
+.stripesImage{
+    margin: 40px 0;
+    padding: 0;
+    display: block;
+    padding: 60px 30px 0 0;
+    width: 100%;
+    height: 80px;
+    background:url('../../../Lib/images/stripes-image.svg') no-repeat;
+}
+.locationText{
+    line-height: 1.88;
+    letter-spacing: .3px;
+}
+.about-04 {
+    height: 700px;
+    background-color: #1e1e1e;
+    padding: 45px 0 45px 0;
+}
+.imgBlock{
+    background : url('../../../Lib/images/imageBlock.jpg');
+    height: 700px;
+    width: 450px;
+    position: relative;
+    margin: 0 auto;
+    height: 400px;
+    width: 95%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}    
+.block-text {
+    font-size: 2rem;
+    line-height: 1.51;
+    z-index: 1;
+    position: relative;
+    margin: auto 10% auto 37%;
+}
+
+.borderedText {
+    border-left: 4px solid #f7c512;
+    padding: 30px 40px;
+    margin: 50px 20% 50px 37%;
+    line-height: 1.88;
+}
+
+@media only screen and (max-width: 768px) {
+    .about-02{
+        height: 410px;
+        display: block;
+    }
+    .about-no-2-cont{
+        display: none;
+    }
+    .about-copy{
+        align-self: flex-end;
+        position: relative;
+        z-index: 3;
+        margin: 10% 20px;
+        width: 322px;
+    } 
+    .about-heading {
+        font-size: 1.8rem;
+    }
+    
+    .about-sub-head {
+        margin: 20px 0;
+        font-size: 2rem;
+        width: 322px;
+    }
+    
+    .line {
+        display: none;
+    }
+    
+    .about-para {
+        font-size: 1rem;
+        word-spacing: 0.3px;
+        letter-spacing: .8px;
+        line-height: 1.25;
+        width: 322px;
+        text-align: justify;
+    }
+    .about-03 {
+        height: 840px;
+    }
+    .about-03-cont{
+        overflow: visible;
+        width: 100%;
+        padding: 0 0 10px;
+        margin: 30px 0;
+        flex-direction: column;
+        height: 830px;
+    }
+    .whiteBlockContainer:after{
+        margin-left: 0;
+        width: 100vw;
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        left: 0;
+    }
+    .factoryImage{
+        overflow: visible;
+        height: 200px;
+        -webkit-transform: translateX(20px);
+        transform: translateX(20px);
+        margin: 25px 0 30px 0;
+    }
+    .factoryImg {
+        height: 195px;
+    }
+    .about-section{
+        font-size: 1.8rem;
+        margin-left: 18px;
+    }
+    .additionalCopy{
+        width: 100%;
+        padding: 0 20px 0 20px;
+        height: 420px;
+        
+    }
+    .additionalCopy p{
+        letter-spacing: .3px;
+        line-height: 1.25;
+    }
+    .stripesImage{
+        margin: 20px 0;
+        display: block;
+        padding: 0;
+        width: 100%;
+        height: 40px;
+    }
+    .locationText{
+        font-size: 13px;
+        line-height: 1.88;
+    }
+    .about-04 {
+        height: 655px;
+    }
+    .imageBlock {
+        width: 100%;
+        height: 230px;
+        margin-bottom: 210px;
+    }
+    .block-text{
+        padding-top: 30px;
+        line-height: 1.17;
+        margin: 30px 20px;
+        font-size: 1.8rem;
+    }
+    .borderedText {
+        margin: 50px 20px 20px 0;
+        padding: 0 20px;
+        font-size: 15px;
+    }
+}

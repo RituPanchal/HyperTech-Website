@@ -1,7 +1,7 @@
 import React from 'react';
 import '../Home/css/home.css';
 import "../../../node_modules/font-awesome/css/font-awesome.min.css";
-import "../Home/js/home";
+import "../Home/js/home.js";
 import Footer from '../Footer/footer.component';
 
 const HomeComponent = () => {
