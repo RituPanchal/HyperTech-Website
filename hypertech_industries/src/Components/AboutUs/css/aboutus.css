@@ -29,7 +29,6 @@
     top: -0px;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
-    /* visibility: visible; */
 }   
 
 @keyframes appearDown {
